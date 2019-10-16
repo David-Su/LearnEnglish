@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/vedioTabs/vedioTabs",
     "pages/index/index",
     "pages/userConsole/userConsole",
     "pages/storageConsole/storageConsole",

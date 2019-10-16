@@ -36,6 +36,18 @@ Page({
     })
   },
 
+  onGetBilibili:function(){
+    wx.cloud.callFunction({
+      name: 'getDocumentary',
+      success: res => {
+        console.log('[云函数]', res)
+      },
+      fail: err => {
+        console.error('[云函数] [login] 调用失败', err)
+      }
+    })
+  },
+
   onGetUserInfo: function(e) {
     if (!this.data.logged && e.detail.userInfo) {
       this.setData({

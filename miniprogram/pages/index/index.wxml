@@ -1,6 +1,13 @@
 <!--index.wxml-->
 <view class="container">
 
+  <!-- 获取bilibili -->
+  <view class="xx">
+    <view>
+      <button class="userinfo-nickname" bindtap="onGetBilibili">点击获取 bilibili</button>
+    </view>
+  </view>
+
   <!-- 用户 openid -->
   <view class="userinfo">
     <button 
