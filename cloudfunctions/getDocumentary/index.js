@@ -21,11 +21,15 @@ exports.main = async (event, context) => {
 
     request('https://api.bilibili.com/x/web-interface/search/all/v2?page=1&order=&keyword=%E4%B8%AD%E8%8B%B1%20%E7%BA%AA%E5%BD%95%E7%89%87&jsonp=jsonp',
       function (error, response, body) {
+
+        var obj = JSON.parse(body);
+
         console.log("error:" + error)
         console.log("response:" + response)
         console.log("body:" + body)
+        // console.log("解析:" + obj)
         if (!error && response.statusCode == 200) {
-          resolve(JSON.parse(body))
+          resolve(obj)
         }
         resolve(null)
       });
