@@ -1,2 +1,5 @@
 <!--pages/vedioTabs/vedioTabs.wxml-->
 <text>pages/vedioTabs/vedioTabs.wxml</text>
+<view wx:for="{{docs}}">
+  {{index}}:{{item.title}}
+</view>

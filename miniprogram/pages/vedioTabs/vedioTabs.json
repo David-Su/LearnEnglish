@@ -1,6 +1,4 @@
 {
   "usingComponents": {
-        "recycle-view": "miniprogram/node_modules/miniprogram-recycle-view/recycle-view",
-        "recycle-item": "miniprogram/node_modules/miniprogram-recycle-view/recycle-item"
   }
 }

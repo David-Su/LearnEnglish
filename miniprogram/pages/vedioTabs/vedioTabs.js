@@ -15,7 +15,7 @@ Page({
     wx.cloud.callFunction({
       name:'getDocumentary',
       success:res=>{
-          
+          console.log(res)
       }
     })
   },
