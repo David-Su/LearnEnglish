@@ -21,7 +21,7 @@ exports.main = async (event, context) => {
 
     request('https://api.bilibili.com/x/web-interface/search/all/v2?page=1&order=&keyword=%E4%B8%AD%E8%8B%B1%20%E7%BA%AA%E5%BD%95%E7%89%87&jsonp=jsonp',
       function (error, response, body) {
-        
+
 
         console.log("error:" + error)
         console.log("response:" + response)
@@ -36,7 +36,7 @@ exports.main = async (event, context) => {
             }
 
           })
-          
+
         }
         // resolve(null)
       });

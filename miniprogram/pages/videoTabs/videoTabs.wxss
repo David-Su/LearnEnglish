@@ -1,0 +1,6 @@
+/* pages/videoTabs/videoTabs.wxss */
+.layout_horizontal{
+  /* height: 100rpx; */
+  display: flex;
+  flex-direction: row;
+}

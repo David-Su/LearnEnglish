@@ -5,17 +5,21 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+      docs:[], //纪录片儿类型
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var that = this
     wx.cloud.callFunction({
-      name:'getDocumentary',
-      success:res=>{
-          console.log(res)
+      name: 'getVideoList',
+      success: res => {
+        console.log(res)
+        that.setData({
+          docs:res.result
+        })
       }
     })
   },

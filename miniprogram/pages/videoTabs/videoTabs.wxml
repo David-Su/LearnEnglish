@@ -1,0 +1,13 @@
+<!--pages/vedioTabs/vedioTabs.wxml-->
+<text>pages/vedioTabs/vedioTabs.wxml</text>
+<!-- <view wx:for="{{docs}}">
+  {{index}}:{{item.title}}
+</view> -->
+
+<block wx:for="{{docs}}">
+  <view class="layout_horizontal"  style="height:55px">
+    <image src="{{item.pic}}" style="flex:1;background-color: #88888" mode="scaleToFill" style="height:55px"/>
+        <!-- <image src="{{item.pic}}" /> -->
+    <view style="flex:4">{{item.title}}</view>
+  </view>
+</block>
